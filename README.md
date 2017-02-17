@@ -1,3 +1,4 @@
+
 # my-project
 
 参考网站地址：http://liangxiaojuan.github.io/elem/index#/goods
@@ -30,3 +31,4 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
