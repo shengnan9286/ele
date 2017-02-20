@@ -1,0 +1,91 @@
+.goods{
+    width: 100%;
+    display: flex;
+    height: 4.3rem;
+    border-bottom: 3px solid red;
+    overflow: hidden;
+    position: relative;
+    .menu{
+        width: 20%;
+
+        background: #f3f5f7;
+        position:absolute;
+        left:0;
+        ul{
+            width: 100%;
+            li{
+                text-align: center;
+                padding: 0 0.1rem;
+            }
+            a{
+                font-size: 0.13rem;
+                display: inline-block;
+                padding: 0.15rem 0;
+                border-bottom: 1px solid #d9dde1;
+                color: #4d555d;
+            }
+            .changeBg{
+                background: white;
+            }
+        }
+    }
+    .goods_list{
+        width: 80%;
+        position:absolute;
+        right:0;
+        .goods_item{
+            width:100%;
+            .title{
+                padding-left: 0.14rem;
+                height: 0.26rem;
+                line-height: 0.26rem;
+                border-left: 0.02rem solid #d9dde1;
+                font-size: 0.12rem;
+                color: #93999f;
+                background: #f3f5f7;
+            }
+            .food{
+                display: flex;
+                margin: 0.18rem;
+                 margin-bottom: 0;
+                padding-bottom: 0.18rem;
+                position: relative;
+                border-bottom: 1px solid rgba(7,17,27,.1);
+                div:nth-child(1){
+                    width:25%;
+                    img{
+                        width: 90%;
+                        font-size: 0;
+                    }
+                }
+                div:nth-child(2){
+                    width: 75%;
+                    font-size: 0.14rem;
+                    line-height: 0.14rem;
+                    color: #07111b;
+                    p:nth-child(1){
+                        margin-bottom: 0.1rem;
+                    }
+                    p:nth-child(2){
+                        margin-bottom: 0.05rem;
+                        font-size: 0.1rem;
+                        color: #93999f;
+                    }
+                    p:nth-child(3){
+                        font-size: 10px;
+                        color: #93999f;
+                        span{
+                            margin-right: 0.12rem;
+                        }
+                    }
+                    p:nth-child(4){
+                        line-height: 0.24rem;
+                        margin-right: 0.08rem;
+                        font-size: 0.14rem;
+                        color: #f01414;
+                    }
+                }
+            }
+        }
+    }
+}

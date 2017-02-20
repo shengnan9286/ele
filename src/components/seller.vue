@@ -1,14 +1,14 @@
 <template>
-	<div class="home">
+	<div class="seller">
+		seller
 	</div>
 </template>
 
 <script>
 export default {
-  name: 'home'
+  name: 'seller'
 }
 </script>
 <style lang="scss" scoped>
-	@import '../css/home.scss';
 </style>
 

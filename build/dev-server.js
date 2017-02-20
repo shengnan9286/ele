@@ -23,6 +23,36 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 var proxyTable = config.dev.proxyTable
 
 var app = express()
+/*var appData = require('../data/goods.json')
+var appData2 = require('../data/rating.json')
+var appData3 = require('../data/seller.json')*/
+var appData = require('../data.json');
+var seller = appData.seller;
+var  goods = appData.goods;
+var ratings = appData.ratings;
+
+var apiRoutes = express.Router()
+apiRoutes.get('/goods',function (req, res) {
+  res.json({
+    errno: 0,
+    data: goods
+  })
+})
+apiRoutes.get('/rating',function (req, res) {
+  res.json({
+    errno: 0,
+    data: ratings
+  })
+})
+apiRoutes.get('/seller',function (req, res) {
+  res.json({
+    errno: 0,
+    data: seller
+  })
+})
+
+app.use('/api',apiRoutes)
+
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
